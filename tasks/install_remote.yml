@@ -30,6 +30,10 @@
     timeout: "42"
     mode: 0644
   tags: installation
+  register: __vault_remote_zip_file
+  retries: 6
+  delay: 10
+  until: __vault_remote_zip_file is succeeded
   when: not vault_package.stat.exists | bool
 
 - name: Unarchive Vault and install binary

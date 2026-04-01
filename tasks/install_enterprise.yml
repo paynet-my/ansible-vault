@@ -48,6 +48,10 @@
   become: false
   run_once: true
   tags: installation
+  register: __vault_enterprise_local_zip_file
+  retries: 6
+  delay: 10
+  until: __vault_enterprise_local_zip_file is succeeded
   when: not vault_package.stat.exists | bool
   delegate_to: 127.0.0.1
 
