@@ -346,6 +346,7 @@ vault_awskms_backend: vault_seal_awskms.j2
 vault_awskms_region: "{{ lookup('env', 'AWS_DEFAULT_REGION') | default('us-east-1', false) }}"
 vault_awskms_access_key: "{{ lookup('env', 'AWS_ACCESS_KEY_ID') | default('', false) }}"
 vault_awskms_secret_key: "{{ lookup('env', 'AWS_SECRET_ACCESS_KEY') | default('', false) }}"
+vault_awskms_session_token: "{{ lookup('env', 'AWS_SESSION_TOKEN') | default('', false) }}"
 vault_awskms_key_id: "{{ lookup('env', 'VAULT_AWSKMS_SEAL_KEY_ID') | default('', false) }}"
 vault_awskms_endpoint: "{{ lookup('env', 'AWS_KMS_ENDPOINT') | default('', false) }}"
 

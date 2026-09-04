@@ -9,6 +9,9 @@ seal "awskms" {
 {% if vault_awskms_secret_key is string and vault_awskms_secret_key|length  %}
   secret_key = "{{ vault_awskms_secret_key }}"
 {% endif %}
+{% if vault_awskms_session_token is string and vault_awskms_session_token|length  %}
+  secret_key = "{{ vault_awskms_session_token }}"
+{% endif %}
 {% if vault_awskms_endpoint is string and vault_awskms_endpoint|length %}
   endpoint   = "{{ vault_awskms_endpoint }}"
 {% endif %}

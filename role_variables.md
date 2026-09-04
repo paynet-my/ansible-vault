@@ -1382,8 +1382,13 @@ aid in the creation of new or ephemeral clusters.
 
 ## `vault_awskms_secret_key`
 
-- The AWS Secret Key ID to use for takling to AWS KMS
+- The AWS Secret Key ID to use for talking to AWS KMS
 - Default value: AWS_SECRET_ACCESS_KEY
+
+## `vault_awskms_session_token`
+
+- The AWS Session Toekn to use for talking to AWS KMS
+- Default value: AWS_SESSION_TOKEN
 
 ## `vault_awskms_key_id`
 
