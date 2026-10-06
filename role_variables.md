@@ -1524,7 +1524,7 @@ aid in the creation of new or ephemeral clusters.
 
 ## `vault_awskms_session_token`
 
-- The AWS Session Toekn to use for talking to AWS KMS
+- The AWS Session Token to use for talking to AWS KMS
 - Default value: AWS_SESSION_TOKEN
 
 ## `vault_awskms_key_id`
